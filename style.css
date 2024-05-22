@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+.hamburger.active .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.hamburger.active .bar2 {
+    opacity: 0;
+}
+.hamburger.active .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+.hero-image {
+    flex: 1;
+    max-width: 24%;
+}
+.hero-text {
+    flex: 1;
+    text-align: center;
+}
+.hero-text h1 {
+    margin-bottom:32px ;
+    font-size: 18px;
+    
+}
+.hero-text p {
+    font-size: 72px;
+    margin: 10px 0 20px 0;
+}
+.hero-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.benefits {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.benefits-title {
+    flex: 1;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+}
+.benefits-list {
+    flex: 3;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.benefits-list li {
+    margin: 10px 0;
+}
+
+/* Servicios Section */
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: url('img/Fondo.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.servicios-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.servicios-titulo {
+    font-size: 2em;
+    margin: 10px 0 20px 0;
+}
+.servicios-imagen {
+    max-width: 70%;
+    height: auto;
+}
+
+
+.servicios-imagenes-responsiv{
+    width: 80%;
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagen-uno{
+width: 40%;
+}
+.imagen-dos{
+    width: 40%;
+}
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        max-width: 100%;
+    }
+    .benefits {
+        flex-direction: column;
+        text-align: center;
+    }
+    .benefits-title {
+        margin-bottom: 20px;
+    }
+}
+
