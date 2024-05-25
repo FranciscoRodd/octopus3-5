@@ -163,7 +163,7 @@ width: 40%;
         text-align: center;
     }
     .hero-image {
-        max-width: 100%;
+        max-width: 70%;
     }
     .benefits {
         flex-direction: column;
@@ -174,3 +174,14 @@ width: 40%;
     }
 }
 
+.planes{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.planes-imagen{
+width: 340px;
+}
