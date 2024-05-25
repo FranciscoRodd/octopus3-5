@@ -105,14 +105,18 @@ body {
 }
 
 /* Servicios Section */
+.contenedor-section{
+    background-color: red;
+        background: url('img/Fondo.png') no-repeat center center;
+    background-size: cover;
+}
 .servicios {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px 20px;
-    background: url('img/Fondo.png') no-repeat center center;
-    background-size: cover;
+
     text-align: center;
     color: #fff;
 }
@@ -185,3 +189,37 @@ width: 40%;
 .planes-imagen{
 width: 340px;
 }
+
+#sitios-web p{
+    max-width: 80%;
+
+}
+
+.turno-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+    .contenedor-proyectos-interior{
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .proyectos-container{
+display: flex;
+border-radius: 18px;
+background-color: #066290;
+color: #fff;
+    }
+
+    #proyectos{
+        padding: 50px 20px;
+        
+    }
+
+    .img-proyectos{
+        padding: 50px 20px;
+        width: 50%;
+    }
