@@ -1,27 +1,16 @@
 const hamburger = document.getElementById('hamburger');
-        const navbarLinks = document.getElementById('navbar-links');
+const navbarLinks = document.getElementById('navbar-links');
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navbarLinks.classList.toggle('active');
-        });
-
-
-    // Importar jQuery y Slick Carousel
-import $ from 'jquery';
-import 'slick-carousel';
-
-// Código para inicializar Slick Carousel
-$(document).ready(function(){
-  $('.your-class').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navbarLinks.classList.toggle('active');
 });
-$('.center').slick({
+
+
+$(document).ready(function () {
+  $('.center').slick({
+    // autoplay: true,
+    autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
@@ -46,3 +35,4 @@ $('.center').slick({
       }
     ]
   });
+});

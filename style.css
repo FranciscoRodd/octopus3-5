@@ -236,6 +236,35 @@ body {
     width: 70px;
 }
 
+.container-slide{
+    width: 40px!important;
+}
+.slick-center .container-slide img {
+    transform: scale(2.5);
+    transition: transform 0.5s;
+  }
+
+  .slick-slide:not(.slick-center) .container-slide img {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+  }
+
+  .container-slide img{
+width: 40px;
+  }
+  .container-slide {
+    width: auto !important;
+    display: inline-block;
+  }
+
+  .slick-slide > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#carrusel{
+    margin: 22px 22px;
+}
 @media (max-width: 768px) {
     .navbar-links {
         display: none;
