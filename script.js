@@ -9,7 +9,7 @@ hamburger.addEventListener('click', () => {
 
 $(document).ready(function () {
   $('.center').slick({
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: '60px',
