@@ -1,27 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/Octopus RGB PNG SIN FONDO-11 - copia.png" type="image/png">
-        <title>Octopus</title>
-      
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-      
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,400&display=swap"
-          rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css" />
-      
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-      
-      </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Octopus RGB PNG SIN FONDO-11 - copia.png" type="image/png">
+    <title>Octopus</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+   
+
+</head>
+
 <body>
+    <nav class="navbar">
+        <div class="navbar-logo">OCTOPUS</div>
+        <div class="hamburger" id="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="navbar-links" id="navbar-links">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <img src="img/MedioOctopus 1.png" alt="Hero Image" class="hero-image">
+        <div class="hero-text">
+            <p>Soluciones digitales</p>
+            <h1>Creamos sitios y aplicaciones web que mejoran <br> los productos y servicios de nuestros clientes.</h1>
+            <a href="#" class="hero-button">Hablemos</a>
+        </div>
+    </section>
+    <section class="benefits">
+        <h3 class="benefits-title">BENEFICIOS DE ELEGIRNOS</h3>
+        <ul class="benefits-list">
+            <li>Posicioná tu marca y potenciá tu servicio.</li>
+            <li>Aumentá tu cartera de clientes.</li>
+            <li>Optimizá la gestión y organización de tu proyecto.</li>
+            <li>Ofrecé una experiencia innovadora.</li>
+        </ul>
+    </section>
+    <div  class="contenedor-section" >
+    <section id="sitios-web" class="servicios">
+        
+        <img src="img/SitiosWeb.png" alt="Logo" class="servicios-logo">
+        <h3 class="servicios-titulo">Mostrá lo que tenés para ofrecer al mundo</h3>
+        <img src="img/MaquetaSitioWeb.png" alt="Imagen de Servicios" class="servicios-imagen">
+        <span class="planes">
+            <img src="img/Simple.png" alt="Imagen de Servicios" class="planes-imagen">
+            <img src="img/Avanzado.png" alt="Imagen de Servicios" class="planes-imagen">
+
+        </span>
+        <p> Estas propuestas deben tomarse como referencia. Al ponerse en contacto con nosotros, analizamos cada caso en particular
+            y elaboramos una propuesta ajustada a la necesidad existente. Algunos de los ítems expresados arriba pueden variar.</p>
+    </section>
+    <section id="turnos-online" class="servicios">
+        <img src="img/SitiosWeb.png" alt="Logo" class="servicios-logo">
+        <h3 class="servicios-titulo">Digitalizá tus turnos</h3>
+        <p class="subtítulo-apps">Modernizá tu agenda y ofrecele a tus clientes una experiencia mejorada.</p>
+        <span class="planes">
+            <span class="turno-plan">
+            <img src="img/MockUp-TurnosOnline.png" alt="Imagen de Servicios" class="planes-imagen">
+            <p class="bajada-apps">Sacar un turno nunca fue tan fácil</p>
+        </span>
+            <img src="img/Tarifa-TurnosOnline.png" alt="Imagen de Servicios" class="planes-imagen">
+        </span>
+        
+    </section>
     
+    <section id="carta-online" class="servicios">
+        <img src="img/SitiosWeb.png" alt="Logo" class="servicios-logo">
+        <h3 class="servicios-titulo">Digitalizá tu carta</h3>
+        <p class="subtítulo-apps">Mantenela siempre actualizada y al alcance de todos.</p>
+        <span class="planes">
+            <span class="turno-plan">
+            <img src="img/MockUp-CartaDigital.png" alt="Imagen de Servicios" class="planes-imagen">
+            <p class="bajada-apps">Tu carta editable al instante</p>
+        </span>
+            <img src="img/Tarifa-CartaDigital.png" alt="Imagen de Servicios" class="planes-imagen">
+        </span>
+        
+    </section>
+    </div>
+
+    <section id="proyectos" >
+        <div class="proyectos-container">
+            <span class="contenedor-proyectos-interior">
+            <h3 >SERVIPLANET</h3>
+            <p>Diseño y desarrollo de sitio web para la compañía de saneamiento ambiental de la comarca petrolera.</p>
+            <button class="boton-iralsitio">Ir al sitio</button>
+        </span>
+            <img class="img-proyectos" src="img/Recurso 5 1.png" alt="">
+            
+        </div>
+        <div class="proyectos-container-reversa">
+            <span class="contenedor-proyectos-interior">
+            <h3>Huincul Turismo</h3>
+            <p>Diseño y desarrollo de sitio web para agencia de turismo
+                de Plaza Huincul.</p>
+            <button class="boton-iralsitio">Ir al sitio</button>
+        </span>
+            <img class="img-proyectos" src="img/Recurso 5 1 (1).png" alt="">
+            
+        </div>
+        <div class="proyectos-container">
+            <span class="contenedor-proyectos-interior">
+            <h3>Gestiones Limay</h3>
+            <p>Diseño y desarrollo de sitio web para la empresa de gestoría y logística de Neuquén.</p>
+            <button class="boton-iralsitio">Ir al sitio</button>
+        </span>
+            <img class="img-proyectos" src="img/Recurso 5 1 (2).png" alt="">
+            
+        </div>
+        <div class="proyectos-container-reversa">
+            <span class="contenedor-proyectos-interior">
+            <h3>Inventario de Productos</h3>
+            <p>Diseño y desarrollo de software web
+                para control y gestión de productos.</p>
+            <button class="boton-iralsitio">Ir al sitio</button>
+        </span>
+            <img class="img-proyectos" src="img/image 2.png" alt="">
+            
+        </div>
+    </section>
+
+<section id="carrusel">  <div class="center">
+    <div class="container-slide"><img src="img/descarga (1).png" alt=""></div>
+    <div  class="container-slide"> <img src="img/descarga (2).png" alt=""> </div>
+    <div  class="container-slide"><img src="img/descarga.png" alt=""></div>
+    <div  class="container-slide"><img src="img/descarga (1).png" alt=""></div>
+    <div  class="container-slide"> <img src="img/descarga (2).png" alt=""> </div>
+    <div  class="container-slide"><img src="img/descarga.png" alt=""></div>
+  </div>
+</section>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="script.js"></script>
+
+
 </html>

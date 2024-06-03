@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.hamburger.active .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+}
+
+.hamburger.active .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 24%;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 32px;
+
+}
+
+.hero-text p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    margin: 10px 0 20px 0;
+}
+
+.hero-button {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.benefits {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.benefits-title {
+    flex: 1;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.benefits-list {
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+    flex: 3;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    margin: 10px 0;
+}
+
+/* Servicios Section */
+.contenedor-section {
+    background-color: red;
+    background: url('img/Fondo.png') no-repeat center center;
+    background-size: cover;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+
+    text-align: center;
+    color: #fff;
+}
+
+.servicios-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.servicios-titulo {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 72px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    margin: 10px 0 20px 0;
+}
+
+.subtítulo-apps{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.servicios-imagen {
+    max-width: 70%;
+    height: auto;
+}
+
+
+
+.servicios-imagenes-responsiv {
+    width: 80%;
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagen-uno {
+    width: 40%;
+}
+
+.imagen-dos {
+    width: 40%;
+}
+
+
+
+.planes {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.planes-imagen {
+    margin-bottom: 28px;
+    width: 300px;
+}
+
+.bajada-apps{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 32px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#sitios-web p {
+    max-width: 80%;
+
+}
+
+.turno-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-proyectos-interior {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.proyectos-container {
+    margin-bottom: 18px;
+    display: flex;
+    border-radius: 18px;
+    background-color: #066290;
+    color: #fff;
+}
+
+#proyectos {
+    padding: 50px 20px;
+
+}
+
+#proyectos h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#proyectos p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.boton-iralsitio{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.img-proyectos {
+    padding: 50px 20px;
+    width: 50%;
+}
+
+.proyectos-container-reversa{    
+    margin-bottom: 18px;
+    display: flex;
+    border-radius: 18px;
+    background-color: #066290;
+    color: #fff;
+    flex-direction: row-reverse;
+}
+
+.contenedor-proyectos-interior button{
+    width: 70px;
+}
+
+.container-slide{
+    width: 40px!important;
+}
+.slick-center .container-slide img {
+    transform: scale(2.5);
+    transition: transform 0.5s;
+  }
+
+  .slick-slide:not(.slick-center) .container-slide img {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+  }
+
+  .container-slide img{
+width: 40px;
+  }
+  .container-slide {
+    width: auto !important;
+    display: inline-block;
+  }
+
+  .slick-slide > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#carrusel{
+    margin: 22px 22px;
+}
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        align-items: normal;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 50%;
+    }
+
+    .benefits {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefits-title {
+        margin-bottom: 20px;
+    }
+
+    .img-proyectos {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 90%;
+        padding: 38px 18px 0px;
+    }
+
+    .proyectos-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contenedor-proyectos-interior {
+        padding:15px 20px 28px;
+    }
+
+ 
+    .proyectos-container-reversa{
+        flex-direction: column-reverse;
+    }
+    .servicios-imagen{
+        max-width: 88%;
+    }
+}
