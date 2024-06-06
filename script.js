@@ -20,7 +20,7 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '60px',
           slidesToShow: 3
         }
       },
@@ -29,7 +29,7 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '60px',
           slidesToShow: 3
         }
       }

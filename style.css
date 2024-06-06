@@ -128,9 +128,9 @@ body {
 
 .benefits-list {
     font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
     flex: 3;
     list-style: none;
     padding: 0;
@@ -175,7 +175,7 @@ body {
     margin: 10px 0 20px 0;
 }
 
-.subtítulo-apps{
+.subtítulo-apps {
     font-family: "Nunito Sans", sans-serif;
     font-size: 24px;
     font-optical-sizing: auto;
@@ -221,7 +221,7 @@ body {
     width: 300px;
 }
 
-.bajada-apps{
+.bajada-apps {
     font-family: "Nunito Sans", sans-serif;
     font-size: 32px;
     font-optical-sizing: auto;
@@ -258,15 +258,15 @@ body {
     background-color: #066290;
 }
 
-.proyecto2{
+.proyecto2 {
     background-color: #028762;
 }
 
-.proyecto3{
+.proyecto3 {
     background-color: #020D37;
 }
 
-.proyecto4{
+.proyecto4 {
     background-color: #85C3EE;
 }
 
@@ -275,21 +275,21 @@ body {
 
 }
 
-#proyectos h3{
+#proyectos h3 {
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-size: 40px;
 }
 
-#proyectos p{
+#proyectos p {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     font-optical-sizing: auto;
     font-weight: 600;
 }
 
-.boton-iralsitio{
+.boton-iralsitio {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     font-optical-sizing: auto;
@@ -301,7 +301,7 @@ body {
     width: 50%;
 }
 
-.proyectos-container-reversa{    
+.proyectos-container-reversa {
     margin-bottom: 18px;
     display: flex;
     border-radius: 18px;
@@ -309,54 +309,59 @@ body {
     flex-direction: row-reverse;
 }
 
-.contenedor-proyectos-interior button{
+.contenedor-proyectos-interior button {
     width: 70px;
 }
 
-.container-slide{
-    width: 40px!important;
+.container-slide {
+    width: 40px !important;
 }
+
 .slick-center .container-slide img {
     transform: scale(2.5);
     transition: transform 0.5s;
-  }
+}
 
-  .slick-slide:not(.slick-center) .container-slide img {
-    opacity: 0.5;
+.slick-slide:not(.slick-center) .container-slide img {
+    /* opacity: 0.5; */
     transition: opacity 0.5s;
-  }
+}
 
-  .container-slide img{
-width: 80px;
-  }
-  .container-slide {
+.container-slide img {
+    width: 100px;
+}
+
+.container-slide {
     width: auto !important;
     display: inline-block;
-  }
+}
 
-  .slick-slide > div {
-    padding: 60px 0px;
+.slick-slide>div {
+    padding: 90px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-#carrusel{
+}
+
+#carrusel {
     margin: 0px 0px 54px;
 }
-.logo-cont{
+
+.logo-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.slick-track{
+.slick-track {
     margin-top: 20px;
 }
-.slick-list{
+
+.slick-list {
     padding: 40px;
 }
 
-.container-nosotros{
+.container-nosotros {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -364,20 +369,25 @@ width: 80px;
     gap: 54px;
 
 }
-.container-persona{
+
+.container-persona {
     display: flex;
 }
-.persona{
+
+.persona {
     gap: 22px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
-.persona img{
+
+.persona img {
     border-radius: 50%;
 }
-.persona p, h3{
+
+.persona p,
+h3 {
     color: #e0e0e0;
 }
 
@@ -431,16 +441,18 @@ width: 80px;
     }
 
     .contenedor-proyectos-interior {
-        padding:15px 20px 28px;
+        padding: 15px 20px 28px;
     }
 
- 
-    .proyectos-container-reversa{
+
+    .proyectos-container-reversa {
         flex-direction: column-reverse;
     }
-    .servicios-imagen{
+
+    .servicios-imagen {
         max-width: 88%;
     }
+
     .container-nosotros {
         display: flex;
         flex-direction: column;
@@ -449,4 +461,13 @@ width: 80px;
         gap: 54px;
         align-content: center;
 
-}}
+    }
+
+    .slick-slide>div {
+        padding: 60px 0px;
+    }
+
+    .container-slide img {
+        width: 80px;
+    }
+}
