@@ -13,8 +13,11 @@ body {
 }
 
 .navbar-logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 32px;
 }
 
 .navbar-links {
@@ -23,9 +26,13 @@ body {
 }
 
 .navbar-links a {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     text-decoration: none;
     color: #333;
-    font-size: 1em;
+    font-size: 24px;
 }
 
 .hamburger {
@@ -73,19 +80,25 @@ body {
 }
 
 .hero-text h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
     margin-bottom: 32px;
-    font-size: 18px;
 
 }
 
 .hero-text p {
-    font-size: 62px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 72px;
+    font-weight: 800;
     margin: 10px 0 20px 0;
 }
 
 .hero-button {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
     padding: 10px 20px;
-    font-size: 1em;
     background-color: #6a0dad;
     color: #fff;
     border: none;
@@ -105,13 +118,19 @@ body {
 
 .benefits-title {
     flex: 1;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
     text-align: right;
     margin-right: 20px;
 }
 
 .benefits-list {
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
     flex: 3;
     list-style: none;
     padding: 0;
@@ -146,14 +165,27 @@ body {
 }
 
 .servicios-titulo {
-    font-size: 2em;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 72px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
     margin: 10px 0 20px 0;
+}
+
+.subtítulo-apps{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .servicios-imagen {
     max-width: 70%;
     height: auto;
 }
+
 
 
 .servicios-imagenes-responsiv {
@@ -187,6 +219,14 @@ body {
     width: 300px;
 }
 
+.bajada-apps{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 32px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
 #sitios-web p {
     max-width: 80%;
 
@@ -209,13 +249,49 @@ body {
     margin-bottom: 18px;
     display: flex;
     border-radius: 18px;
-    background-color: #066290;
     color: #fff;
+}
+
+.proyecto1 {
+    background-color: #066290;
+}
+
+.proyecto2{
+    background-color: #028762;
+}
+
+.proyecto3{
+    background-color: #020D37;
+}
+
+.proyecto4{
+    background-color: #85C3EE;
 }
 
 #proyectos {
     padding: 50px 20px;
 
+}
+
+#proyectos h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#proyectos p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.boton-iralsitio{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 
 .img-proyectos {
@@ -227,7 +303,6 @@ body {
     margin-bottom: 18px;
     display: flex;
     border-radius: 18px;
-    background-color: #066290;
     color: #fff;
     flex-direction: row-reverse;
 }
