@@ -249,8 +249,23 @@ body {
     margin-bottom: 18px;
     display: flex;
     border-radius: 18px;
-    background-color: #066290;
     color: #fff;
+}
+
+.proyecto1 {
+    background-color: #066290;
+}
+
+.proyecto2{
+    background-color: #028762;
+}
+
+.proyecto3{
+    background-color: #020D37;
+}
+
+.proyecto4{
+    background-color: #85C3EE;
 }
 
 #proyectos {
@@ -288,7 +303,6 @@ body {
     margin-bottom: 18px;
     display: flex;
     border-radius: 18px;
-    background-color: #066290;
     color: #fff;
     flex-direction: row-reverse;
 }
@@ -384,4 +398,3 @@ width: 40px;
     .servicios-imagen{
         max-width: 88%;
     }
-}
