@@ -258,12 +258,21 @@ width: 40px;
   }
 
   .slick-slide > div {
+    padding: 30px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 #carrusel{
-    margin: 22px 22px;
+    margin: 62px 22px;
+}
+
+
+.slick-track{
+    margin-top: 20px;
+}
+.slick-list{
+    padding: 40px;
 }
 @media (max-width: 768px) {
     .navbar-links {

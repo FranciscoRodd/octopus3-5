@@ -13,7 +13,7 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 3,
+    slidesToShow: 5,
     responsive: [
       {
         breakpoint: 768,
@@ -30,9 +30,10 @@ $(document).ready(function () {
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 3
         }
       }
     ]
   });
 });
+AOS.init();
