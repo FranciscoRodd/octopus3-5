@@ -327,7 +327,7 @@ body {
   }
 
   .container-slide img{
-width: 40px;
+width: 80px;
   }
   .container-slide {
     width: auto !important;
@@ -335,7 +335,7 @@ width: 40px;
   }
 
   .slick-slide > div {
-    padding: 30px 0px;
+    padding: 60px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
