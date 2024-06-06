@@ -355,6 +355,34 @@ width: 40px;
 .slick-list{
     padding: 40px;
 }
+
+.container-nosotros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 54px;
+
+}
+.container-persona{
+    display: flex;
+}
+.persona{
+    gap: 22px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.persona img{
+    border-radius: 50%;
+}
+.persona p, h3{
+    color: #e0e0e0;
+}
+
+
+
 @media (max-width: 768px) {
     .navbar-links {
         display: none;
@@ -413,4 +441,12 @@ width: 40px;
     .servicios-imagen{
         max-width: 88%;
     }
-}
+    .container-nosotros {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 54px;
+        align-content: center;
+
+}}
