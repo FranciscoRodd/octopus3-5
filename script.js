@@ -13,14 +13,14 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 3,
+    slidesToShow: 5,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '60px',
           slidesToShow: 3
         }
       },
@@ -29,10 +29,11 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          centerPadding: '60px',
+          slidesToShow: 3
         }
       }
     ]
   });
 });
+AOS.init();
