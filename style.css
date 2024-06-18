@@ -67,7 +67,7 @@ body {
 .hamburger div {
     width: 25px;
     height: 2px;
-    background-color: #333;
+    background-color: #121212ba;
     margin: 3px 0;
     transition: 0.4s;
 }
