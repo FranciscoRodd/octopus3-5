@@ -4,15 +4,23 @@ body {
 }
 
 .navbar {
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     background-color: #f8f8f8;
     padding: 10px 20px;
+    position: fixed; /* Fijo para que se mantenga en su posición */
+    top: 0;
+    width: 100%;
+    z-index: 10000; /* Asegura que esté por encima del hero */
 }
-
+/* .active{
+    margin-top: 44px;
+} */
 .navbar-logo {
+    margin-left: 24px;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -21,19 +29,34 @@ body {
 }
 
 .navbar-links {
+    margin-right: 44px;
     display: flex;
     gap: 15px;
 }
 
 .navbar-links a {
+    font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-style: normal;
     text-decoration: none;
-    color: #333;
+    color: #161616;
     font-size: 24px;
 }
+
+
+.overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Color y opacidad */
+    z-index: 999; /* Encima del contenido */
+}
+
 
 .hamburger {
     display: none;
@@ -61,12 +84,12 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #f8f8f8;
+    margin-top: 60px; /* Ajusta según la altura de tu navbar */
 }
 
 .hero-image {
@@ -84,7 +107,6 @@ body {
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 32px;
-
 }
 
 .hero-text p {
@@ -143,6 +165,7 @@ body {
 
 /* Servicios Section */
 .contenedor-section {
+    padding: 0px 32px;
     background-color: red;
     background: url('img/Fondo.png') no-repeat center center;
     background-size: cover;
@@ -155,7 +178,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 50px 20px;
-
     text-align: center;
     color: #fff;
 }
@@ -188,8 +210,6 @@ body {
     height: auto;
 }
 
-
-
 .servicios-imagenes-responsiv {
     width: 80%;
     margin-top: 48px;
@@ -205,8 +225,6 @@ body {
 .imagen-dos {
     width: 40%;
 }
-
-
 
 .planes {
     width: 90%;
@@ -231,7 +249,6 @@ body {
 
 #sitios-web p {
     max-width: 80%;
-
 }
 
 .turno-plan {
@@ -272,7 +289,6 @@ body {
 
 #proyectos {
     padding: 50px 20px;
-
 }
 
 #proyectos h3 {
@@ -358,7 +374,9 @@ body {
 }
 
 .slick-list {
+    
     padding: 40px;
+    overflow: hidden;
 }
 
 .container-nosotros {
@@ -367,7 +385,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 54px;
-
 }
 
 .container-persona {
@@ -379,7 +396,6 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .persona img {
@@ -391,9 +407,11 @@ h3 {
     color: #e0e0e0;
 }
 
-
-
 @media (max-width: 768px) {
+
+    .contenedor-section {
+        padding: 0px;}
+
     .navbar-links {
         display: none;
         flex-direction: column;
@@ -402,12 +420,17 @@ h3 {
     }
 
     .navbar-links.active {
+        margin-left: 24px;
+        height: 428px;
         display: flex;
-    }
+        justify-content: center;
+        align-content: flex-start;
+        align-items: flex-start;
+    }    
 
     .hamburger {
-        display: flex;
-    }
+        margin-right: 82px;
+        display: flex;}
 
     .hero {
         align-items: normal;
@@ -444,7 +467,6 @@ h3 {
         padding: 15px 20px 28px;
     }
 
-
     .proyectos-container-reversa {
         flex-direction: column-reverse;
     }
@@ -460,7 +482,6 @@ h3 {
         justify-content: space-between;
         gap: 54px;
         align-content: center;
-
     }
 
     .slick-slide>div {
@@ -470,4 +491,20 @@ h3 {
     .container-slide img {
         width: 80px;
     }
+}
+.no-scroll {
+    overflow: hidden;
+}
+.navbar-scrolled {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.15);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+
+.no-scroll {
+    overflow: hidden;
 }
