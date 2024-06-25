@@ -413,6 +413,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
+    .navbar-logo {
+        font-size: 28px;
+    }
+
     .benefits-list{
         text-align: left;
     }
@@ -434,7 +438,7 @@ h3 {
         font-size: 40px;
        }
        .hero-text {
-        margin-left: 24px;
+        margin-left: 20px;
         text-align: start;
         flex: 1;
     }
