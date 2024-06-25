@@ -59,3 +59,24 @@ $(document).ready(function () {
   });
 });
 AOS.init();
+
+
+// JavaScript to handle dynamic insertion of <br> if needed
+function adjustBreaks() {
+  const desktopBreaks = document.querySelectorAll('.desktop-break');
+  const mobileBreaks = document.querySelectorAll('.mobile-break');
+
+  if (window.innerWidth <= 768) {
+      desktopBreaks.forEach(bp => bp.style.display = 'none');
+      mobileBreaks.forEach(bp => bp.style.display = 'inline');
+  } else {
+      desktopBreaks.forEach(bp => bp.style.display = 'inline');
+      mobileBreaks.forEach(bp => bp.style.display = 'none');
+  }
+}
+
+// Initial check
+adjustBreaks();
+
+// Add event listener to check on resize
+window.addEventListener('resize', adjustBreaks);
