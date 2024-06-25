@@ -88,7 +88,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #f8f8f8;
-    margin-top: 60px; /* Ajusta según la altura de tu navbar */
+    margin-top: 50px; /* Ajusta según la altura de tu navbar */
 }
 
 .hero-image {
