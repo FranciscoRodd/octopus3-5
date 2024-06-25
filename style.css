@@ -421,6 +421,7 @@ h3 {
     }
 
     .benefits-list{
+        font-size: 20px;
         text-align: left;
     }
     .navbar{
@@ -447,7 +448,7 @@ h3 {
     }
 
        .hero-text h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
     .contenedor-section {
         padding: 0px;}
