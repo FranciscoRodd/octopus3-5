@@ -413,6 +413,9 @@ h3 {
 }
 
 @media (max-width: 768px) {
+    .servicios-titulo {
+        font-size: 32px;
+    }
     .navbar-logo {
         font-size: 28px;
     }
@@ -466,7 +469,7 @@ h3 {
     }    
 
     .hamburger {
-        margin-right: 82px;
+        margin-right: 42px;
         display: flex;}
 
     .hero {
