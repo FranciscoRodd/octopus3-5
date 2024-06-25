@@ -414,8 +414,12 @@ h3 {
 
 @media (max-width: 768px) {
 
+    .navbar{
+        padding: 8px 0px;
+    }
+
     .hero-button{
-        padding: 10px 140px;
+        padding: 10px 128px;
     }
     .desktop-break {
         display: none;
@@ -466,6 +470,7 @@ h3 {
     }
 
     .hero-image {
+        padding: 0px;
         max-width: 60%;
     }
 
