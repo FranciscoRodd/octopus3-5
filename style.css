@@ -413,7 +413,9 @@ h3 {
 }
 
 @media (max-width: 768px) {
-
+    .benefits-list{
+        text-align: left;
+    }
     .navbar{
         padding: 8px 0px;
     }
@@ -480,6 +482,7 @@ h3 {
     }
 
     .benefits-title {
+        text-align: left;
         margin-bottom: 20px;
     }
 
