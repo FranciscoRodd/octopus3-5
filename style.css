@@ -268,6 +268,7 @@ body {
 }
 
 .proyectos-container {
+    padding: 20px 0px;
     margin-bottom: 18px;
     display: flex;
     border-radius: 18px;
@@ -295,6 +296,7 @@ body {
 }
 
 #proyectos h3 {
+    margin: 0;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -416,7 +418,32 @@ h3 {
 .mobile-break {
     display: none;
 }
-
+.image-container {
+    position: relative;
+    display: inline-block; /* Para ajustar el tamaño del contenedor al de la imagen */
+  }
+  
+  .planes-imagen {
+    display: block;
+  }
+  
+  .centered-button {
+    font-size: 18px;
+    position: absolute;
+    bottom: 64px; 
+    transform: translateX(-50%);
+    padding: 10px 20px; 
+    background-color: #6a0dad; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+  }
+  
+  .centered-button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el ratón por encima */
+  }
+  
 @media (max-width: 768px) {
 
     .benefits{
