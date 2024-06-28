@@ -170,7 +170,7 @@ body {
 .contenedor-section {
     padding: 0px 32px;
     background-color: red;
-    background: url('img/Fondo.jpg') no-repeat center center;
+    background: url('img/Fondo.webp') no-repeat center center;
     background-size: cover;
     padding-bottom: 44px;
 }
