@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.benefits-list{
+    font-size: 20px;
+}
+
 .navbar {
     
     display: flex;
@@ -129,7 +133,7 @@ body {
 }
 
 .benefits {
-    gap: 5px;
+    gap: 89px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,7 +170,7 @@ body {
 .contenedor-section {
     padding: 0px 32px;
     background-color: red;
-    background: url('img/Fondo.png') no-repeat center center;
+    background: url('img/Fondo.jpg') no-repeat center center;
     background-size: cover;
     padding-bottom: 44px;
 }
@@ -305,12 +309,15 @@ body {
 }
 
 .boton-iralsitio {
+    background-color: rgb(106,161,188);
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     font-optical-sizing: auto;
     font-weight: 600;
 }
-
+.contenedor-proyectos-interior button{
+    width: 50%;
+}
 .img-proyectos {
     padding: 50px 20px;
     width: 50%;
@@ -324,9 +331,7 @@ body {
     flex-direction: row-reverse;
 }
 
-.contenedor-proyectos-interior button {
-    width: 70px;
-}
+
 
 .container-slide {
     width: 40px !important;
@@ -413,6 +418,13 @@ h3 {
 }
 
 @media (max-width: 768px) {
+
+    .benefits{
+        gap: 8px;;
+    }
+    .contenedor-proyectos-interior button {
+        width: auto;
+    }
     .servicios-titulo {
         font-size: 32px;
     }
@@ -421,7 +433,7 @@ h3 {
     }
 
     .benefits-list{
-        font-size: 20px;
+     
         text-align: left;
     }
     .navbar{
@@ -550,4 +562,18 @@ backdrop-filter: blur(8.1px);
 
 .no-scroll {
     overflow: hidden;
+}
+
+
+button {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
 }
