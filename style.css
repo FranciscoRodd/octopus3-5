@@ -142,7 +142,7 @@ body {
 }
 
 .benefits-title {
-    flex: 1;
+    flex: 2;
     font-family: "Nunito Sans", sans-serif;
     font-size: 40px;
     font-weight: 600;
