@@ -1,3 +1,5 @@
+
+
 function nextStep(step) {
   const currentStep = document.querySelectorAll('.form-step')[step - 1];
   const nextStep = document.querySelectorAll('.form-step')[step];
@@ -117,85 +119,97 @@ document.getElementById('contactForm').addEventListener('submit', function (even
   });
 });
 
-const hamburger = document.getElementById('hamburger');
-const navbarLinks = document.getElementById('navbar-links');
-const overlay = document.getElementById('overlay');
-const body = document.body;
-const navbar = document.querySelector('.navbar');
+document.addEventListener('DOMContentLoaded', function () {
+  // Definir variables después de que el DOM esté completamente cargado
+  const hamburger = document.getElementById('hamburger');
+  const navbarLinks = document.getElementById('navbar-links');
+  const overlay = document.getElementById('overlay');
+  const body = document.body;
+  const navbar = document.querySelector('.navbar');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navbarLinks.classList.toggle('active');
-    overlay.style.display = navbarLinks.classList.contains('active') ? 'block' : 'none';
-    body.classList.toggle('no-scroll', navbarLinks.classList.contains('active'));
-});
-
-overlay.addEventListener('click', () => {
-    navbarLinks.classList.remove('active');
-    hamburger.classList.remove('active');
-    overlay.style.display = 'none';
-    body.classList.remove('no-scroll');
-});
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 0) {
-        navbar.classList.add('navbar-scrolled');
-    } else {
-        navbar.classList.remove('navbar-scrolled');
-    }
-});
-
-
-
-$(document).ready(function () {
-  $('.center').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    centerMode: true,
-    arrows: false,
-    centerPadding: '60px',
-    slidesToShow: 5,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '60px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '60px',
-          slidesToShow: 3
-        }
-      }
-    ]
-  });
-});
-AOS.init();
-
-
-// JavaScript to handle dynamic insertion of <br> if needed
-function adjustBreaks() {
-  const desktopBreaks = document.querySelectorAll('.desktop-break');
-  const mobileBreaks = document.querySelectorAll('.mobile-break');
-
-  if (window.innerWidth <= 768) {
-      desktopBreaks.forEach(bp => bp.style.display = 'none');
-      mobileBreaks.forEach(bp => bp.style.display = 'inline');
-  } else {
-      desktopBreaks.forEach(bp => bp.style.display = 'inline');
-      mobileBreaks.forEach(bp => bp.style.display = 'none');
+  // Función para cerrar el menú
+  function closeMenu() {
+      navbarLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+      overlay.style.display = 'none';
+      body.classList.remove('no-scroll');
   }
-}
 
-// Initial check
-adjustBreaks();
+  // Event listener para el botón de hamburguesa
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navbarLinks.classList.toggle('active');
+      overlay.style.display = navbarLinks.classList.contains('active') ? 'block' : 'none';
+      body.classList.toggle('no-scroll', navbarLinks.classList.contains('active'));
+  });
 
-// Add event listener to check on resize
-window.addEventListener('resize', adjustBreaks);
+  // Event listener para el overlay
+  overlay.addEventListener('click', closeMenu);
+
+  // Event listeners para los enlaces del menú
+  document.querySelectorAll('.navbar-links a').forEach(anchor => {
+      anchor.addEventListener('click', closeMenu);
+  });
+
+  // Manejo del scroll para cambiar la apariencia de la navbar
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+          navbar.classList.add('navbar-scrolled');
+      } else {
+          navbar.classList.remove('navbar-scrolled');
+      }
+  });
+
+  // Configuración inicial del carrusel
+  $(document).ready(function () {
+      $('.center').slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          arrows: false,
+          centerPadding: '60px',
+          slidesToShow: 5,
+          responsive: [
+              {
+                  breakpoint: 768,
+                  settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '60px',
+                      slidesToShow: 3
+                  }
+              },
+              {
+                  breakpoint: 480,
+                  settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '60px',
+                      slidesToShow: 3
+                  }
+              }
+          ]
+      });
+  });
+  AOS.init();
+
+  // JavaScript para manejar la inserción dinámica de <br> si es necesario
+  function adjustBreaks() {
+      const desktopBreaks = document.querySelectorAll('.desktop-break');
+      const mobileBreaks = document.querySelectorAll('.mobile-break');
+
+      if (window.innerWidth <= 768) {
+          desktopBreaks.forEach(bp => bp.style.display = 'none');
+          mobileBreaks.forEach(bp => bp.style.display = 'inline');
+      } else {
+          desktopBreaks.forEach(bp => bp.style.display = 'inline');
+          mobileBreaks.forEach(bp => bp.style.display = 'none');
+      }
+  }
+
+  // Revisión inicial
+  adjustBreaks();
+
+  // Añadir event listener para revisar en el cambio de tamaño
+  window.addEventListener('resize', adjustBreaks);
+});
