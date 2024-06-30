@@ -579,9 +579,9 @@ textarea {
 .footer {
     color: white;
     margin-top: 198px;
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .error-message{
