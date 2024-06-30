@@ -189,6 +189,65 @@
 </span>
 </div>
     </div>
+    <span class="nosotros-container">
+        <img class="img-nos" src="img/IG.png" alt="">
+        <h2>Juntos somos OCTOPUS</h2>
+    </span>
+</section>
+
+<section id="contacto">
+    <div class="container">
+        <div class="header">
+            <div class="form-container">
+                <form id="contactForm" action="https://formspree.io/f/xeojqojz" method="POST">
+                    <div class="form-step active">
+                        <textarea name="consulta" placeholder="Dejanos tu consulta"></textarea>
+                        <span class="error-message">El campo de consulta no debe estar vacío.</span>
+                        <button type="button" onclick="nextStep(1)">Siguiente</button>
+                    </div>
+                    <div class="form-step">
+                        <input type="text" name="telefono" placeholder="Ingresa tu teléfono">
+                        <span class="error-message">El campo de teléfono solo debe contener números.</span>
+                        <button type="button" onclick="nextStep(2)">Siguiente</button>
+                    </div>
+                    <div class="form-step">
+                        <input type="email" name="email" placeholder="Ingresa tu email">
+                        <span class="error-message">Por favor, ingresa un correo electrónico válido.</span>
+                        <button type="submit">Enviar</button>
+                    </div>
+                    
+                    
+                    
+                </form>
+            </div>
+            <img src="/octopus3-5/img/pulpo.png" alt="Logo" class="logo-form" width="100">
+
+        </div>
+        <span class="links-container">
+            <h2>OCTOPUS</h2>
+            <div class="links">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Nosotros</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="icon-facebook.png" alt="Facebook" width="30"></a>
+                <a href="#"><img src="icon-instagram.png" alt="Instagram" width="30"></a>
+                <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" width="30"></a>
+            </div>
+        </span>
+        <span class="footer">
+            <div class="copy">
+                &copy; Copyright 2024
+            </div>
+            <p>Todos los derechos reservados</p>
+        </span>
+    </div>
+
+    <div class="popup" id="popup">
+        ¡Gracias por contactarnos! Responderemos tu consulta a la brevedad. Gracias por elegir Octopus.
+    </div>
 </section>
 </div>
 </body>

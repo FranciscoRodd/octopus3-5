@@ -443,9 +443,169 @@ h3 {
   .centered-button:hover {
     background-color: #0056b3; /* Color del botón al pasar el ratón por encima */
   }
+.nosotros-container{
+    margin: 40px 0;
+    font-size: 12px;
+    gap: 48px;
+    font-weight: 100;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .img-nos{
+    width: 80px;
+  }
   
-@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+}
 
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-form {
+    right: 120px;
+    width: 600px;
+    position: absolute;
+    z-index: 2;
+}
+
+.form-container {
+    position: relative;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 60px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.links-container h2 {
+    margin: 20px 0;
+}
+
+.links,
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.links a,
+.social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.copy {
+    margin-top: 20px;
+}
+
+.form-step {
+    display: none;
+    flex-direction: column;
+}
+
+.form-step.active {
+    display: flex;
+}
+
+.form-step input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-step button {
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+.popup {
+    z-index: 999;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 252, 252);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup.active {
+    display: block;
+}
+
+.links-container {
+    color: white;
+    margin-top: 98px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+textarea {
+    margin-bottom: 24px;
+    min-height: 80px;
+    width: auto;
+    resize: vertical;
+}
+
+.footer {
+    color: white;
+    margin-top: 198px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.error-message{
+    margin-bottom: 14px;
+    font-size: 14px;
+   color: rgb(255, 255, 255); display: none;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 128px;
+}
+@media (max-width: 768px) {
+.footer{
+    margin-top: 98px;
+}
+    .logo-form{
+        margin-top: 44px;
+        position: relative;
+        right: 0;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 100%;
+    }
     .benefits{
         gap: 8px;;
     }
