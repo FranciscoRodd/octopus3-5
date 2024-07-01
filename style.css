@@ -496,7 +496,7 @@ h3 {
     font-size: 20px;
     font-weight: 400;
     position: absolute;
-    bottom: 32px;
+    bottom: 64px;
     transform: translateX(-50%);
     padding: 8px 56px;
     background: linear-gradient(to right, #8637ef 10%, #109afc 50%, #01fefc 90%);
@@ -513,7 +513,7 @@ h3 {
     font-size: 20px;
     font-weight: 400;
     position: absolute;
-    bottom: 104px;
+    bottom: 64px;
     transform: translateX(-50%);
     padding: 8px 84px;
     background: linear-gradient(to right, #8637ef 10%, #109afc 50%, #01fefc 90%);
@@ -522,6 +522,7 @@ h3 {
     border-radius: 8px;
     cursor: pointer;
     letter-spacing: 0.8px;
+    width: 64%;
   }
   
   .centered-button:hover {
