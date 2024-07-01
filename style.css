@@ -1,18 +1,34 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.ahero {
+    color: inherit;
+    text-decoration: none;
+}
 .navbar {
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #f8f8f8;
-    padding: 10px 20px;
+    background-color: #FCFCF7;
+    padding: 24px 0px;
+    position: fixed; /* Fijo para que se mantenga en su posición */
+    top: 0;
+    width: 100%;
+    z-index: 10000; /* Asegura que esté por encima del hero */
 }
-
+/* .active{
+    margin-top: 44px;
+} */
 .navbar-logo {
+    margin-left: 24px;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -21,19 +37,33 @@ body {
 }
 
 .navbar-links {
+    margin-right: 44px;
     display: flex;
-    gap: 15px;
+    gap: 32px;
 }
 
 .navbar-links a {
+    font-weight: 400;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
     text-decoration: none;
-    color: #333;
-    font-size: 24px;
+    color: #161616;
+    font-size: 20px;
 }
+
+
+.overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    kground: rgba(0, 0, 0, 0.5); /* Color y opacidad */
+    z-index: 999; /* Encima del contenido */
+}
+
 
 .hamburger {
     display: none;
@@ -44,7 +74,7 @@ body {
 .hamburger div {
     width: 25px;
     height: 2px;
-    background-color: #333;
+    background-color: #121212ba;
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -61,92 +91,120 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f8f8;
+    background-color: #FCFCF7;
+    margin-top: 50px; /* Ajusta según la altura de tu navbar */
 }
 
 .hero-image {
     flex: 1;
     max-width: 24%;
+    padding: 24px 0;
 }
 
 .hero-text {
+    margin-left: 196px;
+    text-align: left;
     flex: 1;
-    text-align: center;
 }
 
 .hero-text h1 {
     font-family: "Nunito Sans", sans-serif;
     font-size: 32px;
     font-weight: 300;
-    margin-bottom: 32px;
-
+    color: #1C1F2A;
+    margin: 8px 0 32px;
 }
 
 .hero-text p {
     font-family: "Nunito Sans", sans-serif;
     font-size: 72px;
     font-weight: 800;
-    margin: 10px 0 20px 0;
+    color: #1C1F2A;
+    margin: 0px;
 }
 
 .hero-button {
     font-family: "Nunito Sans", sans-serif;
     font-size: 24px;
-    font-weight: 600;
-    padding: 10px 20px;
-    background-color: #6a0dad;
+    font-weight: 400;
+    padding: 12px 88px;
+    background-color: #8637EF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.benefits {
-    gap: 5px;
+.contenedor-benefits{
+    padding: 240px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px 20px;
-    background-color: #fff;
+}
+
+.benefits {
+    gap: 168px;
+    display: flex;
+    background-color: #FCFCF7;
+    flex-direction: row;
+    max-width: 58%;
+    align-items: baseline
 }
 
 .benefits-title {
-    flex: 1;
+    flex: 2;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     font-style: italic;
     text-align: right;
     margin-right: 20px;
+    color: #1C1F2A;
 }
 
 .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
+    font-size: 32px;
     font-weight: 400;
     font-style: italic;
     flex: 3;
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.benefits-list li {
-    margin: 10px 0;
+    color: #1C1F2A;
 }
 
 /* Servicios Section */
 .contenedor-section {
-    background-color: red;
-    background: url('img/Fondo.png') no-repeat center center;
+    background: url('img/Fondo.webp') no-repeat center center;
     background-size: cover;
-    padding-bottom: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 240px 0;
+}
+
+.contenedor-section-multiple{
+    background: url('img/Fondo.webp') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 240px 0;
+}
+
+.nosotros-contacto{
+display: flex;
+align-items: center;
+flex-direction: column;
 }
 
 .servicios {
@@ -154,25 +212,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
-
     text-align: center;
     color: #fff;
+    max-width: 58%;
 }
 
 .servicios-logo {
-    margin-top: 44px;
-    width: 100px;
-    margin-bottom: 20px;
 }
 
 .servicios-titulo {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 72px;
+    font-size: 48px;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-    margin: 10px 0 20px 0;
+    margin: 64px 0 12px 0;
 }
 
 .subtítulo-apps {
@@ -181,14 +235,13 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    margin: 0 0 64px 0;
 }
 
 .servicios-imagen {
     max-width: 70%;
     height: auto;
 }
-
-
 
 .servicios-imagenes-responsiv {
     width: 80%;
@@ -206,19 +259,18 @@ body {
     width: 40%;
 }
 
-
-
 .planes {
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    gap: 24px;
 }
 
 .planes-imagen {
     margin-bottom: 28px;
-    width: 300px;
+    width: 544px;
+    display: block;
 }
 
 .bajada-apps {
@@ -229,9 +281,10 @@ body {
     font-style: italic;
 }
 
-#sitios-web p {
-    max-width: 80%;
-
+.texto-debajo-tarifas {
+    font-weight: 300;
+    font-size: 16px;
+    max-width: 100%;
 }
 
 .turno-plan {
@@ -241,17 +294,21 @@ body {
 }
 
 .contenedor-proyectos-interior {
-    padding: 50px 20px;
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .proyectos-container {
-    margin-bottom: 18px;
+    padding: 40px 40px;
+    margin: 0;
     display: flex;
-    border-radius: 18px;
+    border-radius: 12px;
     color: #fff;
+    max-width: 58%;
+    height: 560px;
+    gap: 40px;
 }
 
 .proyecto1 {
@@ -271,47 +328,72 @@ body {
 }
 
 #proyectos {
-    padding: 50px 20px;
+    background-color: #FCFCF7;
+    padding: 240px 404px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
 
+.contenedor-section-proyectos{
+    background: #FCFCF7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 240px 0;
 }
 
 #proyectos h3 {
+    margin: 0;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-size: 40px;
+    color: #FCFCF7;
 }
 
 #proyectos p {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    color: #FCFCF7;
+    margin: 8px 0 64px;
 }
 
 .boton-iralsitio {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
+    background-color: rgb(255 255 255 / 40%);
+    padding: 8px 88px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.8px;
+    max-width: 320px;
 }
 
 .img-proyectos {
-    padding: 50px 20px;
     width: 50%;
 }
 
 .proyectos-container-reversa {
-    margin-bottom: 18px;
+    padding: 40px 40px;
+    margin: 0;
     display: flex;
-    border-radius: 18px;
+    border-radius: 16px;
     color: #fff;
-    flex-direction: row-reverse;
+    gap: 40px;
+    max-width: 58%;
+    height: 560px;
 }
 
-.contenedor-proyectos-interior button {
-    width: 70px;
-}
+
 
 .container-slide {
     width: 40px !important;
@@ -358,7 +440,9 @@ body {
 }
 
 .slick-list {
+    
     padding: 40px;
+    overflow: hidden;
 }
 
 .container-nosotros {
@@ -367,7 +451,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 54px;
+}
 
+#nosotros {
+padding: 240px 0;
+width: 58%;
 }
 
 .container-persona {
@@ -379,7 +467,6 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .persona img {
@@ -390,10 +477,263 @@ body {
 h3 {
     color: #e0e0e0;
 }
+.desktop-break {
+    display: inline;
+}
+.mobile-break {
+    display: none;
+}
+.image-container {
+    position: relative;
+    display: inline-block; /* Para ajustar el tamaño del contenedor al de la imagen */
+  }
 
+  .button-sitios-web{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 96px;
+    transform: translateX(-50%);
+    padding: 8px 56px;
+    background: linear-gradient(to right, #8637ef 10%, #109afc 50%, #01fefc 90%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+  }
+  
+  .centered-button {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 104px;
+    transform: translateX(-50%);
+    padding: 8px 84px;
+    background: linear-gradient(to right, #8637ef 10%, #109afc 50%, #01fefc 90%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+  }
+  
+  .centered-button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el ratón por encima */
+  }
 
+.nosotros-container{
+    margin: 40px 0;
+    font-size: 12px;
+    gap: 48px;
+    font-weight: 100;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .img-nos{
+    width: 80px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+}
 
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-form {
+    right: 120px;
+    width: 600px;
+    position: absolute;
+    z-index: 2;
+}
+
+.form-container {
+    position: relative;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 60px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.links-container h2 {
+    margin: 20px 0;
+}
+
+.links,
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.links a,
+.social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.copy {
+    margin-top: 20px;
+}
+
+.form-step {
+    display: none;
+    flex-direction: column;
+}
+
+.form-step.active {
+    display: flex;
+}
+
+.form-step input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-step button {
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+.popup {
+    z-index: 999;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 252, 252);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup.active {
+    display: block;
+}
+
+.links-container {
+    color: white;
+    margin-top: 98px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+textarea {
+    margin-bottom: 24px;
+    min-height: 80px;
+    width: auto;
+    resize: vertical;
+}
+
+.footer {
+    color: white;
+    margin-top: 198px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+.error-message{
+    margin-bottom: 14px;
+    font-size: 14px;
+   color: rgb(255, 255, 255); display: none;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 128px;
+}
 @media (max-width: 768px) {
+.footer{
+    margin-top: 98px;
+}
+    .logo-form{
+        width: 100vw;
+        margin-top: 44px;
+        position: relative;
+        right: 0;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+    .benefits{
+        gap: 8px;;
+    }
+    .contenedor-proyectos-interior button {
+        width: auto;
+    }
+    .servicios-titulo {
+        font-size: 32px;
+    }
+    .navbar-logo {
+        font-size: 28px;
+    }
+
+    .benefits-list{
+     
+        text-align: left;
+    }
+    .navbar{
+        padding: 10px 0px;
+    }
+
+    .hero-button{
+        padding: 10px 128px;
+    }
+    .desktop-break {
+        display: none;
+    }
+    .mobile-break {
+        display: inline;
+    }
+    .hero-text p {
+        line-height: 40px;
+        font-size: 40px;
+       }
+       .hero-text {
+        margin-left: 20px;
+        text-align: start;
+        flex: 1;
+    }
+
+       .hero-text h1 {
+        font-size: 24px;
+    }
+    .contenedor-section {
+        padding: 0px;}
+
     .navbar-links {
         display: none;
         flex-direction: column;
@@ -402,12 +742,17 @@ h3 {
     }
 
     .navbar-links.active {
+        margin-left: 24px;
+        height: 428px;
         display: flex;
-    }
+        justify-content: center;
+        align-content: flex-start;
+        align-items: flex-start;
+    }    
 
     .hamburger {
-        display: flex;
-    }
+        margin-right: 42px;
+        display: flex;}
 
     .hero {
         align-items: normal;
@@ -416,7 +761,8 @@ h3 {
     }
 
     .hero-image {
-        max-width: 50%;
+        padding: 0px;
+        max-width: 60%;
     }
 
     .benefits {
@@ -425,6 +771,7 @@ h3 {
     }
 
     .benefits-title {
+        text-align: left;
         margin-bottom: 20px;
     }
 
@@ -444,7 +791,6 @@ h3 {
         padding: 15px 20px 28px;
     }
 
-
     .proyectos-container-reversa {
         flex-direction: column-reverse;
     }
@@ -460,7 +806,6 @@ h3 {
         justify-content: space-between;
         gap: 54px;
         align-content: center;
-
     }
 
     .slick-slide>div {
@@ -470,4 +815,20 @@ h3 {
     .container-slide img {
         width: 80px;
     }
+}
+.no-scroll {
+    overflow: hidden;
+}
+.navbar-scrolled {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.15);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+
+.no-scroll {
+    overflow: hidden;
 }
