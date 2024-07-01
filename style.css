@@ -18,7 +18,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     background-color: #FCFCF7;
-    padding: 24px 0px;
+    padding: 12px 0px;
     position: fixed; /* Fijo para que se mantenga en su posición */
     top: 0;
     width: 100%;
@@ -35,7 +35,9 @@ body {
     font-style: italic;
     font-size: 32px;
 }
-
+.pulpo-sello{
+    display: none;
+}
 .navbar-links {
     margin-right: 44px;
     display: flex;
@@ -43,13 +45,15 @@ body {
 }
 
 .navbar-links a {
-    font-weight: 400;
+    display: flex;
+    font-weight: 600;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
-    color: #161616;
+    color: #020202;
     font-size: 20px;
+    justify-content: space-between;
 }
 
 
@@ -580,7 +584,9 @@ h3 {
     gap: 10px;
     margin: 10px 0;
 }
-
+.mobile-icon {
+    display: none;
+}
 .links a,
 .social-media a {
     color: white;
@@ -671,6 +677,19 @@ textarea {
     margin-top: 128px;
 }
 @media (max-width: 768px) {
+    .container-sello{
+        margin-top: 44px;
+        display: flex;
+        justify-content: flex-end;
+display: flex;
+    }
+    .pulpo-sello{
+        width: 100px;
+        display: inline-block;
+    }
+    .mobile-icon {
+        display: inline-block;
+    }
 .footer{
     margin-top: 98px;
 }
@@ -743,11 +762,10 @@ textarea {
 
     .navbar-links.active {
         margin-left: 24px;
-        height: 428px;
+        height: 628px;
         display: flex;
         justify-content: center;
         align-content: flex-start;
-        align-items: flex-start;
     }    
 
     .hamburger {
