@@ -24,6 +24,7 @@ body {
     width: 100%;
     z-index: 10000; /* Asegura que esté por encima del hero */
 }
+
 /* .active{
     margin-top: 44px;
 } */
@@ -64,7 +65,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    kground: rgba(0, 0, 0, 0.5); /* Color y opacidad */
+    background-color: rgba(0, 0, 0, 0.5); /* Color y opacidad */
     z-index: 999; /* Encima del contenido */
 }
 
@@ -100,7 +101,8 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #FCFCF7;
-    margin-top: 50px; /* Ajusta según la altura de tu navbar */
+    margin-top: 50px;
+    /* Ajusta según la altura de tu navbar */
 }
 
 .hero-image {
@@ -144,7 +146,7 @@ body {
     text-decoration: none;
 }
 
-.contenedor-benefits{
+.contenedor-benefits {
     padding: 240px 0;
     display: flex;
     flex-direction: column;
@@ -154,6 +156,7 @@ body {
 .benefits {
     gap: 168px;
     display: flex;
+    background-color: #FCFCF7;
     flex-direction: row;
     max-width: 58%;
     align-items: baseline
@@ -196,7 +199,7 @@ body {
     padding: 240px 0;
 }
 
-.contenedor-section-multiple{
+.contenedor-section-multiple {
     background: url('img/Fondo.webp') no-repeat center center;
     background-size: cover;
     display: flex;
@@ -204,10 +207,10 @@ body {
     padding: 240px 0;
 }
 
-.nosotros-contacto{
-display: flex;
-align-items: center;
-flex-direction: column;
+.nosotros-contacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .servicios {
@@ -220,8 +223,7 @@ flex-direction: column;
     max-width: 58%;
 }
 
-.servicios-logo {
-}
+.servicios-logo {}
 
 .servicios-titulo {
     font-family: "Nunito Sans", sans-serif;
@@ -241,10 +243,10 @@ flex-direction: column;
     margin: 0 0 64px 0;
 }
 
-/* .servicios-imagen {
+.servicios-imagen {
     max-width: 70%;
     height: auto;
-}  */
+}
 
 .servicios-imagenes-responsiv {
     width: 80%;
@@ -267,11 +269,12 @@ flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 40px;
+    gap: 24px;
 }
 
 .planes-imagen {
-    width: 100%;
+    margin-bottom: 28px;
+    width: 544px;
     display: block;
 }
 
@@ -287,7 +290,6 @@ flex-direction: column;
     font-weight: 300;
     font-size: 16px;
     max-width: 100%;
-    margin: 72px 0 160px
 }
 
 .turno-plan {
@@ -338,7 +340,7 @@ flex-direction: column;
     gap: 80px;
 }
 
-.contenedor-section-proyectos{
+.contenedor-section-proyectos {
     background: #FCFCF7;
     display: flex;
     flex-direction: column;
@@ -443,7 +445,7 @@ flex-direction: column;
 }
 
 .slick-list {
-    
+
     padding: 40px;
     overflow: hidden;
 }
@@ -457,8 +459,8 @@ flex-direction: column;
 }
 
 #nosotros {
-padding: 240px 0;
-width: 58%;
+    padding: 240px 0;
+    width: 58%;
 }
 
 .container-persona {
@@ -480,23 +482,27 @@ width: 58%;
 h3 {
     color: #e0e0e0;
 }
+
 .desktop-break {
     display: inline;
 }
+
 .mobile-break {
     display: none;
 }
+
 .image-container {
     position: relative;
-    display: inline-block; /* Para ajustar el tamaño del contenedor al de la imagen */
-  }
+    display: inline-block;
+    /* Para ajustar el tamaño del contenedor al de la imagen */
+}
 
-  .button-sitios-web{
+.button-sitios-web {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     font-weight: 400;
     position: absolute;
-    bottom: 64px;
+    bottom: 96px;
     transform: translateX(-50%);
     padding: 8px 56px;
     background: linear-gradient(to right, #8637ef 10%, #109afc 50%, #01fefc 90%);
@@ -505,15 +511,14 @@ h3 {
     border-radius: 8px;
     cursor: pointer;
     letter-spacing: 0.8px;
-    width: 64%;
-  }
-  
-  .centered-button {
+}
+
+.centered-button {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     font-weight: 400;
     position: absolute;
-    bottom: 64px;
+    bottom: 104px;
     transform: translateX(-50%);
     padding: 8px 84px;
     background: linear-gradient(to right, #8637ef 10%, #109afc 50%, #01fefc 90%);
@@ -522,14 +527,14 @@ h3 {
     border-radius: 8px;
     cursor: pointer;
     letter-spacing: 0.8px;
-    width: 64%;
-  }
-  
-  .centered-button:hover {
-    background-color: #0056b3; /* Color del botón al pasar el ratón por encima */
-  }
+}
 
-.nosotros-container{
+.centered-button:hover {
+    background-color: #0056b3;
+    /* Color del botón al pasar el ratón por encima */
+}
+
+.nosotros-container {
     margin: 40px 0;
     font-size: 12px;
     gap: 48px;
@@ -539,11 +544,12 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-  .img-nos{
+
+.img-nos {
     width: 80px;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -585,9 +591,11 @@ h3 {
     gap: 10px;
     margin: 10px 0;
 }
+
 .mobile-icon {
     display: none;
 }
+
 .links a,
 .social-media a {
     color: white;
@@ -623,6 +631,7 @@ h3 {
     color: white;
     cursor: pointer;
 }
+
 .popup {
     z-index: 999;
     display: none;
@@ -665,41 +674,49 @@ textarea {
     justify-content: space-around;
 
 }
-.error-message{
+
+.error-message {
     margin-bottom: 14px;
     font-size: 14px;
-   color: rgb(255, 255, 255); display: none;
+    color: rgb(255, 255, 255);
+    display: none;
 }
 
-#contacto{
+#contacto {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 128px;
 }
+
 @media (max-width: 768px) {
-    .container-sello{
+    .container-sello {
         margin-top: 44px;
         display: flex;
         justify-content: flex-end;
-display: flex;
+        display: flex;
     }
-    .pulpo-sello{
+
+    .pulpo-sello {
         width: 100px;
         display: inline-block;
     }
+
     .mobile-icon {
         display: inline-block;
     }
-.footer{
-    margin-top: 98px;
-}
-    .logo-form{
+
+    .footer {
+        margin-top: 98px;
+    }
+
+    .logo-form {
         width: 100vw;
         margin-top: 44px;
         position: relative;
         right: 0;
     }
+
     .header {
         flex-direction: column;
         align-items: center;
@@ -708,51 +725,63 @@ display: flex;
     .form-container {
         width: 100%;
     }
-    .benefits{
-        gap: 8px;;
+
+    .benefits {
+        gap: 8px;
+        ;
     }
+
     .contenedor-proyectos-interior button {
         width: auto;
     }
+
     .servicios-titulo {
         font-size: 32px;
     }
+
     .navbar-logo {
         font-size: 28px;
     }
 
-    .benefits-list{
-     
+    .benefits-list {
+
         text-align: left;
     }
-    .navbar{
+
+    .navbar {
         padding: 10px 0px;
     }
 
-    .hero-button{
+    .hero-button {
         padding: 10px 128px;
     }
+
     .desktop-break {
         display: none;
     }
+
     .mobile-break {
         display: inline;
     }
+
     .hero-text p {
         line-height: 40px;
         font-size: 40px;
-       }
-       .hero-text {
+    }
+
+    .hero-text {
         margin-left: 20px;
         text-align: start;
         flex: 1;
     }
 
-       .hero-text h1 {
+    .hero-text h1 {
         font-size: 24px;
     }
+
     .contenedor-section {
-        padding: 0px;}
+        padding: 0px;
+    }
 
     .navbar-links {
         display: none;
@@ -767,11 +796,12 @@ display: flex;
         display: flex;
         justify-content: center;
         align-content: flex-start;
-    }    
+    }
 
     .hamburger {
         margin-right: 42px;
-        display: flex;}
+        display: flex;
+    }
 
     .hero {
         align-items: normal;
@@ -835,16 +865,19 @@ display: flex;
         width: 80px;
     }
 }
+
 .no-scroll {
     overflow: hidden;
 }
+
 .navbar-scrolled {
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.15);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.1px);
--webkit-backdrop-filter: blur(8.1px);
-    transition: background-color 0.3s ease; /* Transición suave */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    transition: background-color 0.3s ease;
+    /* Transición suave */
 }
 
 
