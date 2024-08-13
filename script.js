@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   settings: {
                       arrows: false,
                       centerMode: true,
-                      centerPadding: '60px',
+                      centerPadding: '0px',
                       slidesToShow: 3
                   }
               },
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   settings: {
                       arrows: false,
                       centerMode: true,
-                      centerPadding: '60px',
+                      centerPadding: '0px',
                       slidesToShow: 3
                   }
               }
